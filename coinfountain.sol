@@ -20,7 +20,7 @@ contract CoinFountain {
         periodDuration = _periodDuration;
         owner = msg.sender;
         
-        latitude = _latitude; longtitude = _longtitude; _description = description;
+        latitude = _latitude; longtitude = _longtitude; description = _description;
     }
     
     function getFountainInformation() constant returns(uint, uint, uint, uint, string, uint, uint) {
