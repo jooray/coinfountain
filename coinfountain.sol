@@ -37,7 +37,7 @@ contract CoinFountain {
     }
     
     function payOut() {
-        if ((firstTouch + periodDuration <= now) || (this.balance < payoutPerPeriod) || (touchers.length == 0))
+        if ((firstTouch + periodDuration > now) || (this.balance < payoutPerPeriod) || (touchers.length == 0))
             return;
         uint payoutPerToucher = payoutPerPeriod / touchers.length; // should use SafeMath
         for (uint i = 0; i < touchers.length; i++) {
