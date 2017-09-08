@@ -15,7 +15,7 @@ contract CoinFountain {
     event Touched(address toucher);
 
     
-    function CoinFointain(uint _payoutPerPeriod, uint _periodDuration, uint _latitude,
+    function CoinFountain(uint _payoutPerPeriod, uint _periodDuration, uint _latitude,
         uint _longtitude, string _description) {
         firstTouch = now;
         payoutPerPeriod = _payoutPerPeriod;
